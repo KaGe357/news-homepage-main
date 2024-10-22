@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>W.</h1>
+      </div>
+      <div class="menu-icon" id="menu-icon">
+        <img src="./assets/images/icon-menu.svg" alt="Menu" />
+      </div>
+      <div class="close-icon" id="close-icon" style="display: none;">
+        <img src="./assets/images/icon-menu-close.svg" alt="Close" />
+      </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+      <nav class="desktop-nav">
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="main-content">
+        <img
+          src="./assets/images/image-web-3-desktop.jpg"
+          alt="Web 3.0 Future"
+          style="width: 100%; max-width: 1000px"
+        />
+
+        <div class="content-box">
+          <div class="box1">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="box2">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?<br />
+              <button class="btn">Read more</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-content">
+        <h2>New</h2>
+        <div class="new-articles">
+          <article>
+            <h3 class="interactive">Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+          <hr/>
+          <article>
+            <h3 class="interactive">The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+          <hr/>
+          <article>
+            <h3 class="interactive">Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <div class="highlight">
+        <img id="img01" src="./assets/images/image-retro-pcs.jpg" alt="Reviving Retro PCs" />
+        <div class="box0101">
+          <h3 class="interactive biggerSize">01</h3>
+          <p><span class="interactive bold">Reviving Retro PCs</span><br />What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <img id="img02" src="./assets/images/image-top-laptops.jpg" alt="Top 10 Laptops of 2022" />
+        <div class="box0202">
+          <h3 class=" biggerSize">02</h3>
+          <p><span class="interactive bold">Top 10 Laptops of 2022</span><br />Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="highlight">
+        <img id="img03" src="./assets/images/image-gaming-growth.jpg" alt="The Growth of Gaming" />
+        <div class="box0303">
+          <h3 class="interactive biggerSize">03</h3>
+          <p><span class="interactive bold">The Growth of Gaming</span><br />How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

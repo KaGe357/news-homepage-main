@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'Poppins'; /* Nazwa, którą przypisujesz czcionce */
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+p{
+  font-size: 16px;
+
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.main-content .btn {
+  background-color: #ff525d;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.side-content {
+  background-color: #0a0a0a;
+  padding: 20px;
+  color: white;
+  height: auto;
+}
+
+.side-content h2 {
+  font-size: 36px;
+  color: #e9ab53;
+}
+
+.side-content article h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.new-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: grey;
+}
+
+.highlights {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.highlight {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  margin: 80px;
+}
+
+.highlight img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.highlight div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+.box1 {
+  float: left;
+  width: 300px;
+}
+
+.box2 {
+  width: 400px;
+  float: right;
+}
+.box1,
+.box2 {
+  padding: 20px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.box0101 {
+  float: right;
+  position: relative;
+  bottom: 50px;
+  max-width: 250px;
+}
+.box0202 {
+  float: left;
+  position: relative;
+  bottom: 50px;
+  max-width: 250px;
+
+}
+.box0303 {
+  float: left;
+  position: relative;
+  bottom: 50px;
+  max-width: 250px;
+
+}
+
+#img01,
+#img02,
+#img03 {
+  height: 160px;
+  width: 100px;
+  position: relative;
+  bottom: 30px;
+}
+.interactive {
+  cursor: pointer;
+  color: white;
+}
+
+hr {
+  width: 100%;
+  background-color: grey;
+  border: none;
+  height: 2px;
+}
+
+.biggerSize {
+  font-size: 24px;
+  margin-bottom: 0px;
+  color: orangered;
+}
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+header {
+  position: relative;
+}
+
+.menu-icon {
+  cursor: pointer; 
+  display: none; 
+}
+
+.close-icon {
+  cursor: pointer; 
+  display: none; 
+}
+
+.mobile-nav {
+  display: none; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  height: 100vh; 
+  width: 60%; 
+  background-color: white; 
+  z-index: 1000; 
+  padding: 20px; 
+  padding-right: 80px; 
+}
+
+.close-icon {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  cursor: pointer; 
+  display: none; 
+}
+
+.mobile-nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.mobile-nav ul li {
+  padding: 15px; 
+  text-align: left; 
+}
+
+.desktop-nav {
+  display: flex; 
+}
+
+.desktop-nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 20px; 
+}
+.btn:hover {
+  background-color: black; 
+  color: white; 
+}
+
+.interactive:hover {
+  color: orangered; 
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; 
+  }
+
+  .close-icon {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer; 
+    z-index: 1100;
+  }
+
+  .desktop-nav {
+    display: none; 
+  }
+
+  .mobile-nav {
+    display: none; 
+  }
+
+  body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .highlight img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+
+  .highlight div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box1 {
+    float: flex;
+    width: 400px;
+  }
+
+  .box2 {
+    width: 400px;
+    float: right;
+  }
+  .box1,
+  .box2 {
+    padding: 20px;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .highlights {
+    flex-direction: column;
+  }
+
+  .bold {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  }
+}
